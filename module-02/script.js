@@ -15,7 +15,7 @@ do{
     }else{
         alert(invalidInput);
     }
-}while(userInput);
+}while(userInput !== null);
 
 if(numbers.length>0){
     for(let item of numbers){
