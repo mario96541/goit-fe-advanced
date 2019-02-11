@@ -8,13 +8,12 @@ let invalidInput = "Это не число!";
 do{
     userInput = prompt('Введите число','');
 
-    if (userInput === null){
-        break;
-    }else if(!Number.isNaN(+userInput)){
+    if (!Number.isNaN(+userInput) && userInput !== null) {
         numbers.push(+userInput);
-    }else{
+      }
+    else if (userInput !== null) {
         alert(invalidInput);
-    }
+      }
 }while(userInput !== null);
 
 if(numbers.length>0){
