@@ -95,31 +95,3 @@ Hamburger.TOPPINGS = {
   },
 };
 
-
-// Маленький гамбургер с начинкой из сыра
-const hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
-
-// Добавка из приправы
-hamburger.addTopping(Hamburger.TOPPING_SPICE);
-
-// Спросим сколько там калорий
-console.log("Calories: ", hamburger.calculateCalories());
-
-// Сколько стоит?
-console.log("Price: ", hamburger.calculatePrice());
-
-// Я тут передумал и решил добавить еще соус
-hamburger.addTopping(Hamburger.TOPPING_SAUCE);
-
-// А сколько теперь стоит?
-console.log("Price with sauce: ", hamburger.calculatePrice());
-
-// Проверить, большой ли гамбургер?
-console.log("Is hamburger large: ", hamburger.getSize() === Hamburger.SIZE_LARGE); // -> false
-
-// Убрать добавку
-hamburger.removeTopping(Hamburger.TOPPING_SPICE);
-
-// Смотрим сколько добавок
-console.log("Hamburger has %d toppings", hamburger.getToppings().length); // 1
-

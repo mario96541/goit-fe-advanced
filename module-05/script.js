@@ -110,7 +110,7 @@ console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, 
                                             
 //Получить массив имен пользователей по полу (поле gender)
 
-const getUsersByGender = (arr, gender) => arr.filter(arr.gender === gender).map(userName => userName.name);
+const getUsersByGender = (arr, gender) => arr.filter(user => user.gender === gender).map(userName => userName.name);
 
 console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
