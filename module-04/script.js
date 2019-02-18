@@ -54,4 +54,3 @@ const products = {
     apples: 1,
     cheese: 1
   };
-  
