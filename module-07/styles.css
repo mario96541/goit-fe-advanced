@@ -1,35 +1,84 @@
+html {
+  box-sizing: border-box;
+}
 
-/*
-  1. Модифицируйте готовую функцию createPostCard() из задания 
-    номер 6 (https://codepen.io/goit-fe-adv/pen/MVPaeZ) так, 
-    чтобы она принимала объект post с данными для заполнения полей 
-    в карточке.
-      
-  2. Создайте функцию createCards(posts), которая принимает массив
-    объектов-карточек, вызывает функцию createPostCard(post) столько
-    раз, сколько объектов в массиве, сохраняя общий результат и возвращает 
-    массив DOM-элементов всех постов.
-    
-  3. Повесьте все посты в какой-то уже существующий DOM-узел.
-*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-const posts = [
-  {
-    img: "https://placeimg.com/400/150/arch",
-    title: "Post title 1",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
-    link: 'link-1.com'
-  },
-  {
-    img: "https://placeimg.com/400/150/nature",
-    title: "Post title 2",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
-    link: 'link-2.com'
-  },
-  {
-    img: "https://placeimg.com/400/150/arch",
-    title: "Post title 3",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
-    link: 'link-3.com'
-  }
-];
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.movie {
+  width: 400px;
+  border-radius: 4px;
+  color: #212121;
+  margin: 0 auto;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.movie__image {
+  margin-bottom: 8px;
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.movie__body {
+  padding: 8px;
+}
+
+.movie__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.movie__description {
+  margin: 0;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  padding: 0 1.5em;
+  vertical-align: top;
+
+  font-size: 15px;
+  line-height: 2.8;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
+
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
