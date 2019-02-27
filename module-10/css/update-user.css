@@ -1,0 +1,29 @@
+.update-user__form {
+    padding: 20px;
+  }
+  .update-user-container{
+    height: 275px;
+    width: 325px;;
+  }
+  .update-user__form input {
+    margin-right: 12px;
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    color: #263238;
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: 2px solid #ff2d55;
+    &::placeholder {
+      color: #ff2d55;
+    }
+  }
+  p {
+    font-size: 18px;
+  }
+
+
+  
+.result {
+    border: 2px solid #ff2d55;
+}

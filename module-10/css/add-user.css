@@ -1,0 +1,22 @@
+.add-user__form {
+    padding: 10px;
+  }
+  .add-user-container {
+    border: 2px solid #ff2d55;
+    height: 275px;
+    width: 325px;;
+  
+  }
+  .add-user__form input {
+    margin-right: 12px;
+    padding: 4px;
+    outline: 0;
+    border: 0;
+    color: #ff2d55;
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: 2px solid #ff2d55;
+    &::placeholder {
+      color: #ff2d55;
+    }
+  }
