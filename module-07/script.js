@@ -64,4 +64,4 @@ function createCards( info ) {
 
 const container = document.querySelector( ".container" );
 const cards = createCards( infoList );
-container.append(...cards);
+container.append( ...cards );
